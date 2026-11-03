@@ -42,5 +42,22 @@
     "ui_permanent": "Na stałe",
     "ui_expires": "Wygasa",
     "ui_expired": "Wygasł",
-    "ui_refresh": "Odśwież"
+    "ui_refresh": "Odśwież",
+    "card_staff": "Obsługa",
+    "not_ready": "Serwer wciąż się uruchamia, spróbuj ponownie za chwilę.",
+    "card_eta_title": "Szacowany czas",
+    "card_eta_unknown": "Obliczanie...",
+    "card_skipped": "Twój priorytet przesunął cię przed %s graczy",
+    "maintenance_vip": "Serwer jest w trakcie konserwacji. Teraz mogą dołączyć tylko obsługa i VIP-y.",
+    "maintenance_staff": "Serwer jest w trakcie konserwacji. Teraz może dołączyć tylko obsługa.",
+    "maint_on": "Tryb konserwacji włączony",
+    "maint_off": "Tryb konserwacji wyłączony",
+    "cmd_maint": "Przełącz tryb konserwacji kolejki",
+    "arg_state": "on / off (puste = przełącz)",
+    "restarting": "Kolejka się restartuje, połącz się ponownie za chwilę.",
+    "reward_title": "Nagroda VIP",
+    "reward_given": "Otrzymano nagrodę %s w wysokości $%s",
+    "ui_vip": "VIP",
+    "ui_maint_on": "Konserwacja: Wł.",
+    "ui_maint_off": "Konserwacja: Wył."
 }

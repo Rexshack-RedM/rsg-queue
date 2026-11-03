@@ -57,6 +57,9 @@ function render() {
     $('statOnline').textContent = `${state.online}/${state.max}`;
     $('statWaiting').textContent = state.queue.length;
     $('statReserved').textContent = state.reserved;
+    const mb = $('maintBtn');
+    mb.textContent = state.maintenance ? (L.ui_maint_on || 'Maintenance: On') : (L.ui_maint_off || 'Maintenance: Off');
+    mb.classList.toggle('on', !!state.maintenance);
 
     const q = $('queueList');
     if (!state.queue.length) {
@@ -71,6 +74,7 @@ function render() {
                 </div>
                 <span class="pill">${e.priority}</span>
                 <div class="actions">
+                    ${e.tier ? '' : `<button class="wood-btn small" data-vip="${esc(e.license)}" data-name="${esc(e.name)}">${esc(L.ui_vip)}</button>`}
                     <button class="wood-btn small" data-act="queue_front" data-src="${e.src}">${esc(L.ui_front)}</button>
                     <button class="wood-btn small muted" data-act="queue_remove" data-src="${e.src}">${esc(L.ui_remove)}</button>
                 </div>
@@ -109,20 +113,30 @@ async function act(action, data) {
 }
 
 /* ---------- events ---------- */
+function showTab(name) {
+    closeDds();
+    document.querySelectorAll('.tab').forEach((x) => x.classList.toggle('active', x.dataset.tab === name));
+    $('view-queue').classList.toggle('hidden', name !== 'queue');
+    $('view-vips').classList.toggle('hidden', name !== 'vips');
+}
+
 document.addEventListener('click', (e) => {
+    const v = e.target.closest('[data-vip]');
+    if (v) {
+        $('fIdentifier').value = v.dataset.vip;
+        $('fName').value = v.dataset.name || '';
+        showTab('vips');
+        return;
+    }
     const b = e.target.closest('[data-act]');
     if (!b) return;
     const a = b.dataset.act;
     if (a === 'vip_remove') act(a, { identifier: b.dataset.id });
+    else if (a === 'maintenance') act(a, {});
     else act(a, { src: Number(b.dataset.src) });
 });
 
-document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => {
-    closeDds();
-    document.querySelectorAll('.tab').forEach((x) => x.classList.toggle('active', x === t));
-    $('view-queue').classList.toggle('hidden', t.dataset.tab !== 'queue');
-    $('view-vips').classList.toggle('hidden', t.dataset.tab !== 'vips');
-}));
+document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => showTab(t.dataset.tab)));
 
 $('addBtn').addEventListener('click', async () => {
     const identifier = $('fIdentifier').value.trim();

@@ -42,5 +42,22 @@
     "ui_permanent": "Permanent",
     "ui_expires": "Expiră",
     "ui_expired": "Expirat",
-    "ui_refresh": "Reîmprospătează"
+    "ui_refresh": "Reîmprospătează",
+    "card_staff": "Staff",
+    "not_ready": "Serverul încă pornește, încearcă din nou în câteva momente.",
+    "card_eta_title": "Așteptare estimată",
+    "card_eta_unknown": "Se calculează...",
+    "card_skipped": "Prioritatea ta te-a mutat înaintea a %s jucători",
+    "maintenance_vip": "Serverul este în mentenanță. Doar staff-ul și membrii VIP pot intra acum.",
+    "maintenance_staff": "Serverul este în mentenanță. Doar staff-ul poate intra acum.",
+    "maint_on": "Modul mentenanță a fost activat",
+    "maint_off": "Modul mentenanță a fost dezactivat",
+    "cmd_maint": "Comută modul mentenanță al cozii",
+    "arg_state": "on / off (gol = comută)",
+    "restarting": "Coada repornește, reconectează-te în câteva momente.",
+    "reward_title": "Recompensă VIP",
+    "reward_given": "Ai primit recompensa %s de $%s",
+    "ui_vip": "VIP",
+    "ui_maint_on": "Mentenanță: Pornită",
+    "ui_maint_off": "Mentenanță: Oprită"
 }

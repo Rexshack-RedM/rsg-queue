@@ -42,5 +42,22 @@
     "ui_permanent": "Permanent",
     "ui_expires": "Verloopt",
     "ui_expired": "Verlopen",
-    "ui_refresh": "Vernieuwen"
+    "ui_refresh": "Vernieuwen",
+    "card_staff": "Staf",
+    "not_ready": "De server is nog aan het opstarten, probeer het zo opnieuw.",
+    "card_eta_title": "Geschatte wachttijd",
+    "card_eta_unknown": "Bezig met berekenen...",
+    "card_skipped": "Je prioriteit heeft je voor %s spelers gezet",
+    "maintenance_vip": "De server is in onderhoud. Alleen staf en VIP-leden kunnen nu joinen.",
+    "maintenance_staff": "De server is in onderhoud. Alleen staf kan nu joinen.",
+    "maint_on": "Onderhoudsmodus ingeschakeld",
+    "maint_off": "Onderhoudsmodus uitgeschakeld",
+    "cmd_maint": "Onderhoudsmodus van de wachtrij wisselen",
+    "arg_state": "on / off (leeg = wisselen)",
+    "restarting": "De wachtrij herstart, verbind zo opnieuw.",
+    "reward_title": "VIP-beloning",
+    "reward_given": "Je hebt je %s-beloning van $%s ontvangen",
+    "ui_vip": "VIP",
+    "ui_maint_on": "Onderhoud: Aan",
+    "ui_maint_off": "Onderhoud: Uit"
 }

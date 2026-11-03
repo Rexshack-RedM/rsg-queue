@@ -99,6 +99,9 @@ html, body { width: 100%; height: 100%; background: transparent; overflow: hidde
 .wood-btn.small { padding: 4px 8px; font-size: 10.5px; }
 .wood-btn.muted { background: linear-gradient(180deg, #1c1c1c, #0a0a0a); color: var(--rdr-muted); }
 
+.maint { width: 100%; margin-top: 10px; }
+.maint.on { color: var(--rdr-amber); border-color: var(--rdr-amber); }
+
 .form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
 .row2 { display: flex; gap: 8px; }
 .row2 > * { flex: 1; }

@@ -42,5 +42,22 @@
     "ui_permanent": "無期限",
     "ui_expires": "期限",
     "ui_expired": "期限切れ",
-    "ui_refresh": "更新"
+    "ui_refresh": "更新",
+    "card_staff": "スタッフ",
+    "not_ready": "サーバーはまだ起動中です。しばらくしてから再試行してください。",
+    "card_eta_title": "推定待ち時間",
+    "card_eta_unknown": "計算中...",
+    "card_skipped": "優先権により %s 人を追い越しました",
+    "maintenance_vip": "サーバーはメンテナンス中です。現在はスタッフとVIPメンバーのみ参加できます。",
+    "maintenance_staff": "サーバーはメンテナンス中です。現在はスタッフのみ参加できます。",
+    "maint_on": "メンテナンスモードを有効にしました",
+    "maint_off": "メンテナンスモードを無効にしました",
+    "cmd_maint": "キューのメンテナンスモードを切り替え",
+    "arg_state": "on / off（空欄 = 切り替え）",
+    "restarting": "キューを再起動しています。しばらくしてから再接続してください。",
+    "reward_title": "VIP報酬",
+    "reward_given": "%s 報酬 $%s を受け取りました",
+    "ui_vip": "VIP",
+    "ui_maint_on": "メンテナンス: オン",
+    "ui_maint_off": "メンテナンス: オフ"
 }

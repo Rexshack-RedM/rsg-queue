@@ -42,5 +42,22 @@
     "ui_permanent": "Permanent",
     "ui_expires": "Expire",
     "ui_expired": "Expiré",
-    "ui_refresh": "Actualiser"
+    "ui_refresh": "Actualiser",
+    "card_staff": "Staff",
+    "not_ready": "Le serveur démarre encore, réessaie dans un instant.",
+    "card_eta_title": "Attente estimée",
+    "card_eta_unknown": "Calcul en cours...",
+    "card_skipped": "Ta priorité t'a fait passer devant %s joueurs",
+    "maintenance_vip": "Le serveur est en maintenance. Seuls le staff et les membres VIP peuvent se connecter.",
+    "maintenance_staff": "Le serveur est en maintenance. Seul le staff peut se connecter.",
+    "maint_on": "Mode maintenance activé",
+    "maint_off": "Mode maintenance désactivé",
+    "cmd_maint": "Activer/désactiver la maintenance de la file",
+    "arg_state": "on / off (vide = basculer)",
+    "restarting": "La file redémarre, reconnecte-toi dans un instant.",
+    "reward_title": "Récompense VIP",
+    "reward_given": "Tu as reçu ta récompense %s de $%s",
+    "ui_vip": "VIP",
+    "ui_maint_on": "Maintenance : Oui",
+    "ui_maint_off": "Maintenance : Non"
 }

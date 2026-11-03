@@ -15,6 +15,7 @@ Config.UpdateInterval = 2000              -- ms between queue card refreshes
 Config.MinCardTime    = 10                 -- seconds the queue card always shows, even with a free slot (0 = join instantly)
 Config.ConnectTimeout = 180               -- seconds an admitted player may take to load in before their slot is freed
 Config.VipRefresh     = 300               -- seconds between VIP cache reloads from the database (expiry)
+Config.EstimateWindow = 20                -- recent admits used to estimate the wait time on the card
 
 ---------------------------------
 -- slots
@@ -55,4 +56,49 @@ Config.Tiers = {
 Config.Links = {
     { title = 'Discord',      url = 'https://discord.gg/yourinvite' },
     { title = 'Become a VIP', url = 'https://yourstore.tebex.io' },
+}
+
+---------------------------------
+-- maintenance mode (toggle with /queuemaint or the admin panel, survives restarts)
+---------------------------------
+Config.Maintenance = {
+    allowVip = true,   -- true = staff + VIPs may join during maintenance, false = staff only
+}
+
+---------------------------------
+-- discord role priority
+---------------------------------
+-- the bot token is NOT stored here (config is sent to clients). put it in server.cfg:
+--   set rsgqueue_discord_token "your-bot-token"
+-- the bot must be in your guild with the Server Members intent enabled
+Config.Discord = {
+    enabled  = false,
+    guildId  = '',
+    cacheMinutes = 5,   -- how long a player's roles are cached
+    timeout  = 3000,    -- ms to wait for discord before carrying on without it
+    roles = {
+        -- ['discord role id'] = 'tier key' (or 'staff')
+        -- ['123456789012345678'] = 'gold',
+    },
+}
+
+---------------------------------
+-- logging (rsg-log). add the channel below to rsg-log's webhook config
+---------------------------------
+Config.Log = {
+    enabled = true,
+    channel = 'queue',
+}
+
+---------------------------------
+-- VIP rewards: cash paid once per cooldown when a VIP loads a character (per Rockstar license)
+---------------------------------
+Config.VipRewards = {
+    enabled = false,
+    cooldownHours = 24,
+    tiers = {
+        bronze = { cash = 1 },
+        silver = { cash = 2 },
+        gold   = { cash = 5 },
+    },
 }

@@ -5,6 +5,7 @@ local LABEL_KEYS = {
     'ui_title', 'ui_subtitle', 'ui_tab_queue', 'ui_tab_vips', 'ui_online', 'ui_waiting', 'ui_reserved',
     'ui_empty_queue', 'ui_empty_vips', 'ui_front', 'ui_remove', 'ui_identifier', 'ui_name', 'ui_days',
     'ui_add', 'ui_permanent', 'ui_expires', 'ui_expired', 'ui_refresh', 'card_grace',
+    'ui_vip', 'ui_maint_on', 'ui_maint_off',
 }
 
 local function labels()

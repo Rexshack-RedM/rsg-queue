@@ -42,5 +42,22 @@
     "ui_permanent": "Permanent",
     "ui_expires": "Expires",
     "ui_expired": "Expired",
-    "ui_refresh": "Refresh"
+    "ui_refresh": "Refresh",
+    "card_staff": "Staff",
+    "not_ready": "The server is still starting, please try again in a moment.",
+    "card_eta_title": "Estimated wait",
+    "card_eta_unknown": "Calculating...",
+    "card_skipped": "Your priority moved you ahead of %s players",
+    "maintenance_vip": "The server is in maintenance. Only staff and VIP members can join right now.",
+    "maintenance_staff": "The server is in maintenance. Only staff can join right now.",
+    "maint_on": "Maintenance mode enabled",
+    "maint_off": "Maintenance mode disabled",
+    "cmd_maint": "Toggle queue maintenance mode",
+    "arg_state": "on / off (empty = toggle)",
+    "restarting": "The queue is restarting, please reconnect in a moment.",
+    "reward_title": "VIP Reward",
+    "reward_given": "You received your %s reward of $%s",
+    "ui_vip": "VIP",
+    "ui_maint_on": "Maintenance: On",
+    "ui_maint_off": "Maintenance: Off"
 }
